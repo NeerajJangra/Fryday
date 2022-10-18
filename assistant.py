@@ -4,7 +4,7 @@ import datetime
 import wikipedia
 import webbrowser
 import os
-import smtplib
+
 
 
 MASTER='boss'
@@ -12,7 +12,7 @@ engine=pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('volume',1.0) 
 
-engine.setProperty('voice',voices[2].id)
+engine.setProperty('voice',voices[1].id)
 
 def speak(text):
     engine.say(text)
